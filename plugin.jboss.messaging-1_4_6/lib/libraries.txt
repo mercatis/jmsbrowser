@@ -1,0 +1,12 @@
+concurrent-1.3.4-jboss-update1.jar
+javassist-3.10.0.GA.jar
+jboss-aop-client-5.1.0.GA.jar
+jboss-common-core-2.2.10.GA.jar
+jboss-logging-spi-2.0.5.GA.jar
+jboss-mdr-5.1.0.GA.jar
+jboss-messaging-client-1.4.6.GA.jar
+jboss-remoting-2.5.2.SP2.jar
+jboss-serialization-1.0.3.GA.jar
+jnp-client-5.0.3.GA.jar
+log4j-1.2.16.jar
+trove-1.0.2.jar

@@ -1,0 +1,15 @@
+.DS_Store
+bin
+target
+workspace
+.settings
+.project
+.classpath
+plugin.apache.activemq-5_2/lib/*jar
+plugin.jboss.hornetq-2_1_1/lib/*jar
+plugin.jboss.hornetq-2_2_2/lib/*jar
+plugin.jboss.messaging-1_4_2/lib/*jar
+plugin.jboss.messaging-1_4_3/lib/*jar
+plugin.jboss.messaging-1_4_6/lib/*jar
+plugin.jboss.mq-4_2_2_GA/lib/*jar
+plugin.oracle.openmq-4_4/lib/*jar

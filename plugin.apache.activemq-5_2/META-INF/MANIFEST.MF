@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache ActiveMQ (5.2)
+Bundle-SymbolicName: plugin.apache.activemq-5_2;singleton:=true
+Bundle-Version: 2.6.0.qualifier
+Bundle-Vendor: mercatis
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/activemq-all-5.2.0.jar
+Import-Package: com.mercatis.jms,
+ com.mercatis.jms.log,
+ javax.jms

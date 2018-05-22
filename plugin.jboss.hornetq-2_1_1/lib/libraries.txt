@@ -1,0 +1,4 @@
+hornetq-core-client-java5.jar
+hornetq-jms-client-java5.jar
+jnp-client.jar
+netty.jar

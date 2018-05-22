@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JBossMQ (4.2)
+Bundle-SymbolicName: plugin.jboss.mq-4_2_2_GA;singleton:=true
+Bundle-Version: 2.6.0.qualifier
+Bundle-Vendor: MERCATIS
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/jbossall-client_4_2_2_GA.jar
+Import-Package: com.mercatis.jms,
+ javax.jms

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+	
+	<groupId>com.mercatis.jmsbrowser</groupId>
+	<artifactId>jmsbrowser</artifactId>
+	<version>2.6.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<properties>
+		<tycho-version>1.1.0</tycho-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+	
+	<modules>
+		<module>jmsbrowser.jmsapi</module>
+		<module>plugin.apache.activemq-5_2</module>
+		<module>plugin.jboss.hornetq-2_1_1</module>
+		<module>plugin.jboss.hornetq-2_2_2</module>
+		<module>plugin.jboss.messaging-1_4_2</module>
+		<module>plugin.jboss.messaging-1_4_3</module>
+		<module>plugin.jboss.messaging-1_4_6</module>
+		<module>plugin.jboss.mq-4_2_2_GA</module>
+		<module>plugin.oracle.openmq-4_4</module>
+		<module>jmsbrowser.userinterface</module>
+		<module>jmsbrowser.feature</module>
+		<module>jmsbrowser.product</module>
+	</modules>
+	
+	<repositories>
+		<repository>
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/indigo</url>
+		</repository>
+	</repositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<environments>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+<!-- Native product launchers for MacOSX can only be built against Eclipse Mars or newer.
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+-->
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.mercatis.jmsbrowser.ui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="com.mercatis.jmsbrowser.ui.Perspective"
+            id="com.mercatis.jmsbrowser.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.mercatis.jmsbrowser.ui.view.ProjectsTreeView"
+            icon="icons/branding/icon_16x16.png"
+            id="com.mercatis.jmsbrowser.view.tree"
+            name="JMS Connections"
+            restorable="false">
+      </view>
+      <view
+            allowMultiple="true"
+            class="com.mercatis.jmsbrowser.ui.view.DestinationMonitorView"
+            icon="icons/eye.png"
+            id="com.mercatis.jmsbrowser.view.destinationmonitor"
+            name="DestinationMonitor"
+            restorable="false">
+      </view>
+      <view
+            allowMultiple="true"
+            class="com.mercatis.jmsbrowser.ui.view.MessageArchiveView"
+            icon="icons/inbox-document.png"
+            id="com.mercatis.jmsbrowser.view.messagearchive"
+            name="MessageArchive"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="true"
+            class="com.mercatis.jmsbrowser.ui.view.PropertiesEditorView"
+            icon="icons/gear.png"
+            id="com.mercatis.jmsbrowser.view.propertieseditor"
+            name="Properties Editor"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="com.mercatis.jmsbrowser.ui.view.LogView"
+            icon="icons/branding/icon_16x16.png"
+            id="com.mercatis.jmsbrowser.view.log"
+            name="Log"
+            restorable="false">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="jmsbrowser.userinterface.application"
+            name="JMSBrowser">
+         <property
+               name="windowImages"
+               value="icons/branding/icon_16x16.png,icons/branding/icon_32x32.png,icons/branding/icon_48x48.png,icons/branding/icon_64x64.png,icons/branding/icon_128x128.png">
+         </property>
+         <property
+               name="aboutText"
+               value="This is the about Text :-D">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/branding/icon_128x128.png">
+         </property>
+         <property
+               name="appName"
+               value="JMSBrowser">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

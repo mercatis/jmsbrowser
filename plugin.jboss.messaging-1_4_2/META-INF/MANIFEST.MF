@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JBoss Messaging (1.4.2)
+Bundle-SymbolicName: plugin.jboss.messaging-1_4_2;singleton:=true
+Bundle-Version: 2.6.0.qualifier
+Bundle-Vendor: mercatis
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/jboss-messaging-1_4_2_GA-SP1.jar
+Import-Package: com.mercatis.jms,
+ javax.jms

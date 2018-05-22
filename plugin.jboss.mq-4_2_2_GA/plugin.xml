@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.mercatis.jms.connectionService">
+      <connectionService
+            class="com.mercatis.jms.jbossmq_4_2_2_GA.JBossMQConnectionService"
+            name="jboss_mq_4.2">
+         <property
+               defaultValue="localhost"
+               mandatory="true"
+               name="Host"
+               type="String">
+         </property>
+         <property
+               defaultValue="1099"
+               mandatory="true"
+               name="Port"
+               type="String">
+         </property>
+         <property
+               defaultValue="/ConnectionFactory"
+               mandatory="true"
+               name="ConnectionFactory"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="Username"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="Password"
+               type="Password">
+         </property>
+      </connectionService>
+   </extension>
+
+</plugin>

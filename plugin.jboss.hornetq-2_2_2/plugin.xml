@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.mercatis.jms.connectionService">
+      <connectionService
+            class="com.mercatis.jms.hornetq_2_2_2.HornetQConnectionService"
+            name="jboss_hornetq_2_2">
+         <property
+               defaultValue="localhost"
+               mandatory="true"
+               name="Host"
+               type="String">
+         </property>
+         <property
+               defaultValue="1099"
+               mandatory="true"
+               name="Port"
+               type="String">
+         </property>
+         <property
+               defaultValue="guest"
+               mandatory="false"
+               name="Username"
+               type="String">
+         </property>
+         <property
+               defaultValue="guest"
+               mandatory="false"
+               name="Password"
+               type="Password">
+         </property>
+         <property
+               defaultValue="/ConnectionFactory"
+               mandatory="true"
+               name="ConnectionFactory"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="JMXPort"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="JMXUsername"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="JMXPassword"
+               type="Password">
+         </property>
+      </connectionService>
+   </extension>
+      
+</plugin>

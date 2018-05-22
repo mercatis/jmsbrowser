@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HornetQ (2.1)
+Bundle-SymbolicName: plugin.jboss.hornetq-2_1_1;singleton:=true
+Bundle-Version: 2.6.0.qualifier
+Bundle-Vendor: mercatis
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/jnp-client.jar,
+ lib/netty.jar,
+ lib/hornetq-core-client-java5.jar,
+ lib/hornetq-jms-client-java5.jar
+Import-Package: com.mercatis.jms,
+ com.mercatis.jms.log,
+ javax.jms

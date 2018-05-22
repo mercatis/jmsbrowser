@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="JMSBrowser" uid="jmsbrowser" id="jmsbrowser.userinterface.product" application="jmsbrowser.userinterface.application" version="2.6.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/jmsbrowser.userinterface/icons/branding/icon_128x128.png"/>
+      <text>
+         This is the about Text :-D
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-data @noDefault -clean</programArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.6 -Xms40m -Xmx512m</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/jmsbrowser.userinterface/icons/branding/icon_16x16.png" i32="/jmsbrowser.userinterface/icons/branding/icon_32x32.png" i48="/jmsbrowser.userinterface/icons/branding/icon_48x48.png" i64="/jmsbrowser.userinterface/icons/branding/icon_64x64.png" i128="/jmsbrowser.userinterface/icons/branding/icon_128x128.png"/>
+
+   <splash
+      location="jmsbrowser.userinterface" />
+   <launcher name="JMSBrowser">
+      <linux icon="/icons/launcher/icon_512x512.xpm"/>
+      <macosx icon="/icons/launcher/icon_512x512.icns"/>
+      <solaris/>
+      <win useIco="true">
+         <ico path="/icons/launcher/icon.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="jmsbrowser.feature" version="2.6.0.qualifier"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="0" />
+   </configurations>
+
+</product>

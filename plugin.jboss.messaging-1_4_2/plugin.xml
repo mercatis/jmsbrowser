@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.mercatis.jms.connectionService">
+      <connectionService
+            class="com.mercatis.jms.jboss_messaging_1_4_2.JBossMessagingConnectionService"
+            name="jboss_messaging_1.4.2">
+         <property
+               defaultValue="localhost"
+               mandatory="true"
+               name="Host"
+               type="String">
+         </property>
+         <property
+               defaultValue="1099"
+               mandatory="true"
+               name="Port"
+               type="String">
+         </property>
+         <property
+               defaultValue="/ConnectionFactory"
+               mandatory="true"
+               name="ConnectionFactory"
+               type="String">
+         </property>
+         <property
+               defaultValue="guest"
+               mandatory="false"
+               name="Username"
+               type="String">
+         </property>
+         <property
+               defaultValue="guest"
+               mandatory="false"
+               name="Password"
+               type="String">
+         </property>
+      </connectionService>
+   </extension>
+   
+</plugin>

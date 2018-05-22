@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.mercatis.jms.connectionService">
+      <connectionService
+            class="com.mercatis.jms.activemq_5_2_0.ActiveMqConnectionService"
+            name="apache_activemq">
+         <property
+               defaultValue="localhost"
+               mandatory="true"
+               name="Host"
+               type="String">
+         </property>
+         <property
+               defaultValue="61616"
+               mandatory="true"
+               name="Port"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="Username"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="Password"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="JMXPort"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="JMXUsername"
+               type="String">
+         </property>
+         <property
+               mandatory="false"
+               name="JMXPassword"
+               type="Password">
+         </property>
+         <property
+               defaultValue="localhost"
+               mandatory="false"
+               name="JMXBrokerName"
+               type="String">
+         </property>
+      </connectionService>
+   </extension>
+
+</plugin>

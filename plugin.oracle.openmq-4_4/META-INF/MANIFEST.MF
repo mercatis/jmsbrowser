@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Open MQ (4.4)
+Bundle-SymbolicName: plugin.oracle.openmq-4_4;singleton:=true
+Bundle-Version: 2.6.0.qualifier
+Bundle-Vendor: mercatis
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/imq.jar,
+ lib/imqjmx.jar
+Import-Package: com.mercatis.jms,
+ com.mercatis.jms.log,
+ javax.jms
